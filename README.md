@@ -8,6 +8,10 @@ A Home Assistant Blueprint with notification for charging completed.
 From Home Assistant, import the blueprint by adding the following url:
 https://github.com/Habengut/Polestar_Charging/blob/main/Polestar_Charging_Blueprint.yaml
 
+**Dependencies**
+This Blueprint requires the Polestar_api from leeyuentuen:
+https://github.com/leeyuentuen/polestar_api
+
 **Customizing the notification**
 
 Actions:
