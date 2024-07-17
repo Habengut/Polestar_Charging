@@ -9,7 +9,7 @@ blueprint:
       selector:
         entity:
           domain:
-          - PolestarEntity
+          - sensor.polestar_4207_charging_status
           multiple: false
     starting_hysteresis:
       name: Starting hysteresis
