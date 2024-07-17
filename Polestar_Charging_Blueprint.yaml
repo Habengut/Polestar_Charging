@@ -1,0 +1,59 @@
+blueprint:
+  name: Polestar has finished charging
+  description: Do something when your Polestar has finished charging.
+  domain: automation
+  input:
+    vibration_sensor:
+      name: Vibration Sensor
+      description: 'Polestar sensor entity (e.g. Polestart 4207 Ladestatus)'
+      selector:
+        entity:
+          domain:
+          - binary_sensor
+          multiple: false
+    starting_hysteresis:
+      name: Starting hysteresis
+      description: Time duration the sensor has to stay on.
+      default: 5
+      selector:
+        number:
+          min: 1.0
+          max: 60.0
+          unit_of_measurement: min
+          mode: slider
+          step: 1.0
+    finishing_hysteresis:
+      name: Finishing hysteresis
+      description: Time duration the sensor has to stay off.
+      default: 5
+      selector:
+        number:
+          min: 1.0
+          max: 60.0
+          unit_of_measurement: min
+          mode: slider
+          step: 1.0
+    actions:
+      name: Actions
+      description: Actions (e.g. pushing a notification, TTS announcement, ...)
+      selector:
+        action: {}
+  source_url: https://community.home-assistant.io/t/blue-print-to-work-with-aqara-vibration-sensor-for-automation-to-trigger-notification-or-other-action-when-dishwasher-or-washing-machine-is-done/282553
+trigger:
+- platform: state
+  entity_id: !input vibration_sensor
+  to: 'Charging'
+  for:
+    minutes: !input starting_hysteresis
+condition: []
+action:
+- wait_for_trigger:
+  - platform: state
+    entity_id: !input vibration_sensor
+    to: 'Done'
+    for:
+      minutes: !input finishing_hysteresis
+- choose: []
+  default: !input actions
+mode: single
+max_exceeded: silent
