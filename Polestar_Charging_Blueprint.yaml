@@ -4,12 +4,12 @@ blueprint:
   domain: automation
   input:
     vibration_sensor:
-      name: Vibration Sensor
+      name: Polestar Charging
       description: 'Polestar sensor entity (e.g. Polestart 4207 Ladestatus)'
       selector:
         entity:
           domain:
-          - polestar
+          - Polestar
           multiple: false
     starting_hysteresis:
       name: Starting hysteresis
