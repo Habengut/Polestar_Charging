@@ -1,19 +1,15 @@
-Project Title
+**Project Title**
 Home Assistant Blueprint with notification for charging completed
 
-Description
+**Description**
 A Home Assistant Blueprint with notification for charging completed.
 
-Getting Started
-Dependencies
-Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-ex. Windows 10
-
-Installing
+**Installing**
 From Home Assistant, import the blueprint by adding the following url:
 https://github.com/Habengut/Polestar_Charging/blob/main/Polestar_Charging_Blueprint.yaml
 
-Executing program
+**Customizing the notification**
+
 Actions:
 Send notification to your phone
 
@@ -29,15 +25,15 @@ Tick the box "Data" and paste the following into the data field:
   color: green
   visibility: public
 
-Help
+**Help**
 Any advise for common problems or issues.
 
-Authors
+**Author**
 Habengut
 
-Version History
+**Version History**
 1.0
 Initial Release
 
-License
+**License**
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
