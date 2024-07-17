@@ -38,7 +38,7 @@ blueprint:
       description: Actions (e.g. pushing a notification, TTS announcement, ...)
       selector:
         action: {}
-  source_url: https://community.home-assistant.io/t/blue-print-to-work-with-aqara-vibration-sensor-for-automation-to-trigger-notification-or-other-action-when-dishwasher-or-washing-machine-is-done/282553
+  source_url: https://github.com/Habengut/Polestar_Charging/blob/main/Polestar_Charging_Blueprint.yaml
 trigger:
 - platform: state
   entity_id: !input vibration_sensor
