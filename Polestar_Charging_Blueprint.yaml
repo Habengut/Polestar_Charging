@@ -9,12 +9,12 @@ blueprint:
       selector:
         entity:
           domain:
-          - Polestar
+          - PolestarEntity
           multiple: false
     starting_hysteresis:
       name: Starting hysteresis
       description: Time duration the sensor has to stay on.
-      default: 5
+      default: 2
       selector:
         number:
           min: 1.0
@@ -25,7 +25,7 @@ blueprint:
     finishing_hysteresis:
       name: Finishing hysteresis
       description: Time duration the sensor has to stay off.
-      default: 5
+      default: 3
       selector:
         number:
           min: 1.0
