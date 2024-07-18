@@ -37,7 +37,7 @@ color: green
 visibility: public
 ```
 
-You will the recieve notifications that look like this:
+You will then recieve notifications that look like this:
 
 ![Image3](./media/notification.PNG)
 
