@@ -1,6 +1,6 @@
 # Polestar Charging Notification
 ## Description
-Home Assistant Blueprint with notification for charging completed
+This is a Home Assistant Blueprint that notifies you when your Polestar has completed charging.
 
 ![Image1](./media/setup_section.PNG)
 
