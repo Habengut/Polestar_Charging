@@ -36,6 +36,10 @@ notification_icon: mdi:car-side
 color: green
 visibility: public
 ```
+
+You will the recieve notifications that look like this:
+![Image3](./media/notification.PNG)
+
 ## Author
 Made by [Habengut](https://github.com/Habengut)
 
