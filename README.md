@@ -38,7 +38,7 @@ visibility: public
 ```
 
 You will the recieve notifications that look like this:
-![Image3](./media/notification.PNG)
+![Image3](./media/notification.png)
 
 ## Author
 Made by [Habengut](https://github.com/Habengut)
