@@ -1,43 +1,46 @@
-**Project Title**
+# Polestar Charging Notification
+## Description
 Home Assistant Blueprint with notification for charging completed
 
-**Description**
-A Home Assistant Blueprint with notification for charging completed.
+![Image1](./media/setup_section.PNG)
 
-**Installing**
+## Installation
 From Home Assistant, import the blueprint by adding the following url:
 https://github.com/Habengut/Polestar_Charging/blob/main/Polestar_Charging_Blueprint.yaml
 
-**Dependencies**
-This Blueprint requires the Polestar_api from leeyuentuen:
-https://github.com/leeyuentuen/polestar_api
+## Dependencies
+This Blueprint requires the [Polestar_api](https://github.com/leeyuentuen/polestar_api) from [leeyuentuen](https://github.com/leeyuentuen):
 
-**Customizing the notification**
+
+## Customization
+![Image2](./media/data_section.PNG)
+
+Polestar Charging: `Select your Polestar charging status`
+
+Starting Hysteresis: `Delay after charging cable has been plugged in`
+
+Finishing Hysteresis: `Delay after charging has completed before action`
 
 Actions:
-Send notification to your phone
+`Send notification to your phone`
 
 Title:
-Home Assistant
+`Home Assistant`
 
 Message:
-Your Polestar has finished charging
+`Your Polestar has finished charging`
 
-Tick the box "Data" and paste the following into the data field:
+Tick the box *"Data"* and paste the following into the data field:
+```
+notification_icon: mdi:car-side
+color: green
+visibility: public
+```
+## Author
+Made by [Habengut](https://github.com/Habengut)
 
-  notification_icon: mdi:car-side
-  color: green
-  visibility: public
+## Version History
+1.0 - Initial Release
 
-**Help**
-Any advise for common problems or issues.
-
-**Author**
-Habengut
-
-**Version History**
-1.0
-Initial Release
-
-**License**
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+## Licensing
+This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.md) file for details
